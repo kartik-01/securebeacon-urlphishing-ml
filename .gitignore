@@ -22,18 +22,6 @@ build/
 .eggs/
 *.egg-info/
 
-# Model artifacts and large outputs
-artifacts/
-*.h5
-*.onnx
-*.joblib
-*.pt
-*.ckpt
-!artifacts/trusted_domains.json
-!artifacts/feature_columns.json
-!artifacts/feature_importances.json
-!artifacts/shap_summary.png
-!artifacts/model.pkl
 
 # Datasets (large files)
 dataset/*.csv

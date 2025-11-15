@@ -1,0 +1,84 @@
+{
+  "top_20": [
+    {
+      "feature": "IsHTTPS",
+      "importance": 0.5776268839836121
+    },
+    {
+      "feature": "DigitRatio",
+      "importance": 0.12679293751716614
+    },
+    {
+      "feature": "CharContinuationRate",
+      "importance": 0.1046270802617073
+    },
+    {
+      "feature": "HomoglyphCount",
+      "importance": 0.03084259293973446
+    },
+    {
+      "feature": "DomainLength",
+      "importance": 0.02103968895971775
+    },
+    {
+      "feature": "PathLength",
+      "importance": 0.019816096872091293
+    },
+    {
+      "feature": "TLDLegitimateProb",
+      "importance": 0.017910705879330635
+    },
+    {
+      "feature": "QueryLength",
+      "importance": 0.015820974484086037
+    },
+    {
+      "feature": "NoOfSubDomain",
+      "importance": 0.01485234685242176
+    },
+    {
+      "feature": "TopRankPercentile",
+      "importance": 0.013012531213462353
+    },
+    {
+      "feature": "TrustedDomainFlag",
+      "importance": 0.012170444242656231
+    },
+    {
+      "feature": "URLLength",
+      "importance": 0.010674689896404743
+    },
+    {
+      "feature": "DomainReputationScore",
+      "importance": 0.008284150622785091
+    },
+    {
+      "feature": "PathDepth",
+      "importance": 0.0067261457443237305
+    },
+    {
+      "feature": "LevenshteinToTopDomainMin",
+      "importance": 0.003596830414608121
+    },
+    {
+      "feature": "DomainContainsSuspiciousWord",
+      "importance": 0.0026535606011748314
+    },
+    {
+      "feature": "ContainsSuspiciousWord",
+      "importance": 0.002110687317326665
+    },
+    {
+      "feature": "LetterRatio",
+      "importance": 0.0017301758052781224
+    },
+    {
+      "feature": "TLDLength",
+      "importance": 0.001662232680246234
+    },
+    {
+      "feature": "DomainExactTopMatch",
+      "importance": 0.001570042222738266
+    }
+  ]
+}
