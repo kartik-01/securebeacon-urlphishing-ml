@@ -7,7 +7,10 @@ from typing import List
 
 import joblib
 import numpy as np
-import shap
+try:
+    import shap
+except ImportError:  # pragma: no cover - optional dependency
+    shap = None
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, validator
@@ -36,7 +39,11 @@ EXTRACTOR = FeatureExtractor(
     )
 )
 
-SHAP_EXPLAINER = shap.TreeExplainer(INTERPRETATION_MODEL) if INTERPRETATION_MODEL is not None else None
+SHAP_EXPLAINER = (
+    shap.TreeExplainer(INTERPRETATION_MODEL)
+    if shap is not None and INTERPRETATION_MODEL is not None
+    else None
+)
 BASELINE_VECTOR = np.zeros(len(FEATURE_COLUMNS), dtype=float)
 PROBABILITY_TEMPERATURE = 1.5
 PROBABILITY_CLIP = 1e-4
